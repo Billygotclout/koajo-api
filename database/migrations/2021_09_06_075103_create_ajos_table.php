@@ -18,6 +18,7 @@ class CreateAjosTable extends Migration
             $table->integer('user_id');
             $table->double('amount', 8, 2)->default(0.00);
             $table->enum('status', ['pending', 'joined', 'cancelled']);
+            $table->enum('duration', ['4 months']);
             $table->timestamps();
         });
     }

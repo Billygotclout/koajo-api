@@ -10,6 +10,7 @@ class Ajo extends Model
     use HasFactory;
     protected $fillable = [
         'amount',
+        'duration',
         'status',
         'user_id'
      ];
